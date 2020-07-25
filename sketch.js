@@ -15,12 +15,12 @@ function setup() {
 
   wall= createSprite(1200, 200, thickness, height/2);
   wall.shapeColor= color(80, 80, 80);
+  
+  bullet.velocityX= speed;
 }
 
 function draw() {
   background(255,255,255);  
-
-  bullet.velocityX= speed;
 
   /*if(wall.x-bullet.x<bullet.width/2+wall.width/2){
     bullet.velocityX=0;
